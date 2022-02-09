@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Заголовок та іконка сайту -->
+    <title>SmartHive</title>
+    <link rel="shortcut icon" type="image/png" href="img/icons/bee.svg">
+    <!-- meta теги -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Підключаємо CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Оболонка -->
+    <div class="wrapper">
+        <!-- Перший блок (повноекранний) --> 
+        <main class="fullscreen">
+            <div class="fullscreen__body -anim-items -anim-no-hide">
+                <!-- Хедер -->
+                <header class="fullscreen__header header -anim-bottom">
+                        <div class="container">
+                            <div class="header__row">
+                                <!-- Логотип -->
+                                <div class="header__logo">
+                                    <a href="#"><picture><source srcset="img/icons/main_logo.svg" type="image/webp"><img src="img/icons/main_logo.svg" alt="Logo" class="header__img"></picture></a>
+                                </div>
+                                <div class="header__menu menu">
+                                    <!-- Іконка бургера -->
+                                    <div class="menu__icon">
+                                        <span></span>
+                                    </div>
+                                    <!-- Меню -->
+                                    <nav class="menu__body">
+                                        <ul class="menu__list">
+                                            <li><a data-goto=".fullscreen" href="#" class="menu__link">Home</a></li>
+                                            <li><a data-goto=".slider" href="#" class="menu__link">Technology</a></li>
+                                            <li><a data-goto=".using" href="#" class="menu__link">How to use</a></li>
+                                            <li><a data-goto=".vidgets" href="#" class="menu__link">Vidgets</a></li>
+                                            <li><a data-goto=".statistics" href="#" class="menu__link">Statistics</a></li>
+                                            <li><a data-goto=".footer" href="#" class="menu__link">Contacts </a></li>
+                                        </ul> 
+                                    </nav>
+                                    <!-- Заголовок меню -->
+                                    <div class="menu__title">Menu</div>
+                                </div>
+                                <!-- Іконки -->
+                                <div class="header__icons">
+                                    <a href="#" class="header__icon -notify"><img src="img/icons/notify.svg" alt="Notify"></a>
+                                    <a href="#"  class="header__icon -profile"><img src="img/icons/profile.svg" alt="Profile"></a>
+                                    <div class="header__popup popup-header">
+                                        <div class="popup-header__body">
+                                            <!-- <div class="popup-header__text">You have succesfully logged in</div>
+                                            <div class="popup-header__text">You have succesfully logged in</div> -->
+                                            <div class="popup-header__text"> You haven't logged in yet</div>                  
+                                        </div>
+                                    </div>
+                                    <div class="header__popup popup-profile">
+                                        <div class="popup-profile__body">
+                                            <div class="popup-profile__text"><a href="signin.html" target="_blank" class="popup-profile__link">Log in</a></div>
+                                            <div class="popup-profile__text"><a href="signup.html" target="_blank" class="popup-profile__link">Sign up</a></div>
+                                            <!-- <div class="popup-profile__text"><a href="/smartbeehive/exit.php" class="popup-profile__link">Log out</a></div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </header>
+                <!-- Контент -->
+                 <div class="fullscreen__main -anim-items -anim-no-hide"> 
+                    <!-- Зображення -->
+                    <div class="fullscreen__hive -anim-left">
+                        <div class="fullscreen__img img">
+                            <picture><source srcset="img/hive.webp" type="image/webp"><img src="img/hive.png" alt="Hive"></picture>                       
+                        </div>
+                    </div>
+                    <!-- Текст -->
+                    <div class="fullscreen__content -anim-right">
+                        <h1 class="fullscreen__title">Smart bee hive</h1>
+                        <div class="fullscreen__sub-title">In the hive, an IoT device is using to monitor the weight of honey, temperature and to make life of bees more comfortable</div>
+                        <a data-goto=".vidgets" href="#" class="fullscreen__button btn">Try now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Паралакс -->
+            <div class="fullscreen__parallax-images parallax">
+                <div class="parallax__item">
+                   <div class="parallax__big-grass"></div> 
+                </div>
+                <div class="parallax__item">
+                    <div class="parallax__small-grass"></div> 
+                 </div>
+            </div> 
+        </main>
+
+        <!-- Секція зі слайдером --> 
+        <section class="slider">
+            <div class="slider__container container">
+                <div class="slider__body -anim-items -anim-no-hide">
+                    <!-- Заголовок -->
+                    <h2 class="slider__main-title title -anim-bottom">Technology</h2>
+                    <div class="slider__upper-text -anim-sub-bottom">An IoT device consists of a coupe of components. Each of them has its own construction and its own function. You can look at them and found out about them more on the slides below:</div>
+                    <!-- Слайдер -->
+                    <div class="slider__swiper swiper -anim-left">
+                        <div class="slider__wrapper swiper-wrapper" aria-live="polite">
+                            <!-- Слайд -->
+                            <div class="slider__slide swiper-slide">
+                                <div class="slider__img">
+                                    <picture><source srcset="img/components/component_1.webp" type="image/webp"><img src="img/components/component_1.png" alt="component_1"></picture>
+                                </div>
+                                <div class="slider__title">DHT22 temperature and humidity sensor</div>
+                                <div class="slider__text">In this way we will be able to: control the swarm and its possible escape, the attack of enemy insects, the possibility of fire and drought in the area. <br> Measurement humidity range: 0-100% <br> Measurement temperature range: 0 to 50°C</div>
+                            </div>
+                            <!-- Слайд -->
+                            <div class="slider__slide swiper-slide">
+                                <div class="slider__img">
+                                    <picture><source srcset="img/components/component_2.webp" type="image/webp"><img src="img/components/component_2.png" alt="component_2"></picture>                                </div>
+                                <div class="slider__title">BMP180 barometric pressure sensor</div>
+                                <div class="slider__text">BMP180 is a high precision sensor senses barometric pressure and provides that information in digital output.
+                                  <br>  Measurement range: 300 - 1100 GPa
+                                  <br>  Measurement temperature range:-40 to +85°C</div>
+                            </div>
+                            <!-- Слайд -->
+                            <div class="slider__slide swiper-slide">
+                                <div class="slider__img">
+                                    <picture><source srcset="img/components/component_3.webp" type="image/webp"><img src="img/components/component_3.png" alt="component_3"></picture>                                </div>
+                                <div class="slider__title">MQ135 Gas sensor</div>
+                                <div class="slider__text">MQ135 gas sensor has high sensitivity to ammonia gas, sulfide, benzene series steam, also can monitor smoke and other toxic gases well. It can detect kinds of toxic gases and is a kind of low-cost sensor for kinds of applications.</div>
+                            </div>
+                            <!-- Слайд -->
+                            <div class="slider__slide swiper-slide">
+                                <div class="slider__img">
+                                    <picture><source srcset="img/components/component_4.webp" type="image/webp"><img src="img/components/component_4.png" alt="component_4"></picture>                                </div>
+                                <div class="slider__title">NodeMCU V2 ESP8266</div>
+                                <div class="slider__text">ESP8266-based platform for creating various Internet of Things (IoT) devices. The module is able to send and receive information via Wi-Fi.Used when placing the hive near the house to increase comfort when interacting with the hive.</div>
+                            </div>
+                            <!-- Слайд -->
+                            <div class="slider__slide swiper-slide">
+                                <div class="slider__img">
+                                    <picture><source srcset="img/components/component_5.webp" type="image/webp"><img src="img/components/component_5.png" alt="component_5"></picture>                                </div>
+                                <div class="slider__title">Arduino Uno</div>
+                                <div class="slider__text">Arduino UNO is a low-cost, flexible, and easy-to-use programmable open-source microcontroller board. It's a brain of this device. It's used with the communication module.</div>
+                            </div>
+                            <!-- Слайд -->
+                            <div class="slider__slide swiper-slide">
+                                <div class="slider__img">
+                                    <picture><source srcset="img/components/component_6.webp" type="image/webp"><img src="img/components/component_6.png" alt="component_6"></picture>                                </div>
+                                <div class="slider__title">GSM,GPRS,GPS Shield SIM808</div>
+                                <div class="slider__text">The module is used in places not available on the Wi-Fi network, the SIM900 communication module will be used for transmission to the data processing system.
+                                    Values to determine the location of the moment of our hives and control their movement into theft.</div>
+                            </div>
+                            <!-- Слайд -->
+                            <div class="slider__slide swiper-slide">
+                                <div class="slider__img">
+                                    <picture><source srcset="img/components/component_7.webp" type="image/webp"><img src="img/components/component_7.png" alt="component_7"></picture>                                </div>
+                                <div class="slider__title">Weight sensor (strain gauge)</div>
+                                <div class="slider__text">It measures up to 100 kg and is widely used in most weighing instruments.
+
+                                    Designed to simplify interaction with the hive and increase productivity (determination of sufficiently collected honey)</div>
+                            </div>                            
+                        </div>
+                        <!-- Кнопки навігації -->
+                        <div class="slider__next swiper-button-next"></div>
+                        <div class="slider__prev swiper-button-prev"></div>
+                        <!-- Пагінація -->
+                        <div class="slider__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Декоративне зображення -->
+            <div class="slider__decor"></div>
+        </section>
+
+        <!-- Секція How to use з поп-апами -->
+        <section class="using">
+            <div class="container">
+                <div class="using__body -anim-items -anim-no-hide">
+                    <!-- Контент -->
+                    <h2 class="using__title title -anim-bottom">How to use</h2>
+                    <div class="using__text -anim-sub-bottom">These components are placed in different parts of hive. Just click on the pluses which placed on the picture of hive below. You'll know where the component takes place and how it works</div>
+                    <!-- Зображення -->
+                    <div class="using__hive img -anim-scale">
+                        <!-- Картинка вулика -->
+                        <picture><source srcset="img/beehive.webp" type="image/webp"><img src="img/beehive.png" alt="Bee hive"></picture>
+                        <!-- Плюси над картинкою -->
+                        <div class="using__img-button using__img-button-1"><a href="#popup-1" class="popup-link"><picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="+"></picture></a></div>
+                        <div class="using__img-button using__img-button-2"><a href="#popup-2" class="popup-link"><picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="+"></picture></a></div>
+                        <div class="using__img-button using__img-button-3"><a href="#popup-3" class="popup-link"><picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="+"></picture></a></div>
+                        <div class="using__img-button using__img-button-4"><a href="#popup-4" class="popup-link"><picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="+"></picture></a></div>
+                        <div class="using__img-button using__img-button-5"><a href="#popup-5" class="popup-link"><picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="+"></picture></a></div>
+                        <div class="using__img-button using__img-button-6"><a href="#popup-6" class="popup-link"><picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="+"></picture></a></div>
+                        <div class="using__img-button using__img-button-7"><a href="#popup-7" class="popup-link"><picture><source srcset="img/icons/plus.svg" type="image/webp"><img src="img/icons/plus.svg" alt="+"></picture></a></div>
+                    </div>
+                    <!-- Поп-ап 1 -->
+                    <div id="popup-1" class="popup popup-1">
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <a href="" class="popup__close close-popup"></a>
+                                <div class="popup__img"><picture><source srcset="img/components/component_1.webp" type="image/webp"><img src="img/components/component_1.png" alt="component_1"></picture> </div>
+                                <div class="popup__main">
+                                    <div class="popup__title">DHT22 temperature and humidity sensor</div>
+                                    <div class="popup__sub-title">In this way we will be able to: control the swarm and its possible escape, the attack of enemy insects, the possibility of fire and drought in the area. <br> Measurement humidity range: 0-100% <br> Measurement temperature range: 0 to 50°C</div>
+                                </div>
+                                <a href="" class="popup__button btn close-popup">OK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Поп-ап 2 -->
+                    <div id="popup-2" class="popup popup-2">
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <a href="" class="popup__close close-popup"></a>
+                                <div class="popup__img"><picture><source srcset="img/components/component_2.webp" type="image/webp"><img src="img/components/component_2.png" alt="component_2"></picture> </div>
+                                <div class="popup__main">
+                                    <div class="popup__title">BMP180 barometric pressure sensor</div>
+                                    <div class="popup__sub-title">BMP180 is a high precision sensor senses barometric pressure and provides that information in digital output.
+                                        <br>  Measurement range: 300 - 1100 GPa
+                                        <br>  Measurement temperature range:-40 to +85°C</div>
+                                </div>
+                                <a href="" class="popup__button btn close-popup">OK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Поп-ап 3 -->
+                    <div id="popup-3" class="popup popup-2">
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <a href="" class="popup__close close-popup"></a>
+                                <div class="popup__img"><picture><source srcset="img/components/component_3.webp" type="image/webp"><img src="img/components/component_3.png" alt="component_3"></picture> </div>
+                                <div class="popup__main">
+                                    <div class="popup__title">MQ135 Gas sensor</div>
+                                    <div class="popup__sub-title">MQ135 gas sensor has high sensitivity to ammonia gas, sulfide, benzene series steam, also can monitor smoke and other toxic gases well. It can detect kinds of toxic gases and is a kind of low-cost sensor for kinds of applications.</div>
+                                </div>
+                                <a href="" class="popup__button btn close-popup">OK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Поп-ап 4 -->
+                    <div id="popup-4" class="popup popup-4">
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <a href="" class="popup__close close-popup"></a>
+                                <div class="popup__img"><picture><source srcset="img/components/component_4.webp" type="image/webp"><img src="img/components/component_3.png" alt="component_4"></picture> </div>
+                                <div class="popup__main">
+                                    <div class="popup__title">NodeMCU V2 ESP8266</div>
+                                    <div class="popup__sub-title">ESP8266-based platform for creating various Internet of Things (IoT) devices. The module is able to send and receive information via Wi-Fi.Used when placing the hive near the house to increase comfort when interacting with the hive.</div>
+                                </div>
+                                <a href="" class="popup__button btn close-popup">OK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Поп-ап 5 -->
+                    <div id="popup-5" class="popup popup-5">
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <a href="" class="popup__close close-popup"></a>
+                                <div class="popup__img"><picture><source srcset="img/components/component_5.webp" type="image/webp"><img src="img/components/component_5.png" alt="component_5"></picture> </div>
+                                <div class="popup__main">
+                                    <div class="popup__title">Arduino Uno</div>
+                                    <div class="popup__sub-title">Arduino UNO is a low-cost, flexible, and easy-to-use programmable open-source microcontroller board. It's a brain of this device. It's used with the communication module.</div>
+                                </div>
+                                <a href="" class="popup__button btn close-popup">OK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Поп-ап 6 -->
+                    <div id="popup-6" class="popup popup-6">
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <a href="" class="popup__close close-popup"></a>
+                                <div class="popup__img"><picture><source srcset="img/components/component_6.webp" type="image/webp"><img src="img/components/component_6.png" alt="component_6"></picture> </div>
+                                <div class="popup__main">
+                                    <div class="popup__title">GSM,GPRS,GPS Shield SIM808</div>
+                                    <div class="popup__sub-title">The module is used in places not available on the Wi-Fi network, the SIM900 communication module will be used for transmission to the data processing system.
+                                        Values to determine the location of the moment of our hives and control their movement into theft.</div>
+                                </div>
+                                <a href="" class="popup__button btn close-popup">OK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Поп-ап 6 -->
+                    <div id="popup-7" class="popup popup-7">
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <a href="" class="popup__close close-popup"></a>
+                                <div class="popup__img"><picture><source srcset="img/components/component_7.webp" type="image/webp"><img src="img/components/component_7.png" alt="component_7"></picture> </div>
+                                <div class="popup__main">
+                                    <div class="popup__title">Weight sensor (strain gauge)</div>
+                                    <div class="popup__sub-title">It measures up to 100 kg and is widely used in most weighing instruments.
+                                        Designed to simplify interaction with the hive and increase productivity (determination of sufficiently collected honey)</div>
+                                </div>
+                                <a href="" class="popup__button btn close-popup">OK</a>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <!-- Задній фон -->
+                <div class="back"></div>
+                <!-- Декоративні зображення -->
+                <div class="using__decor"></div>
+            </div>
+        </section>
+
+        <!-- Секція Vidgets з прогрес барами -->
+        <section class="vidgets">
+            <div class="container">
+              <div class="vidgets__body -anim-items -anim-no-hide">
+                <!-- Заголовок -->
+                <div class="vidgets__title title -anim-bottom">Vidgets</div> 
+                <!-- Текст -->           
+                <div class="vidgets__text -anim-sub-bottom">You can know more about you hive. Just look at bars below and you'll found out how much honey there is, what the temperature inside, what the humidity level is in the hive and how many bees are inside. In other words, you'll manage to know the condition in beehive.</div>
+                <div class="vidgets__content">
+                  <div class="vidgets__select select -anim-sub-bottom">
+                    <div class="select__header">
+                      <div class="select__hive">
+                        <img src="img/icons/mini_hive.svg" alt="#">
+                      </div>
+                      <span class="select__current">Choose your hive</span>
+                      <div class="select__icon"></div>
+                    </div>
+                    <div class="select__body ">
+                      <div class="select__item">Hive 1(#58OR01)</div>
+                      <div class="select__item">Hive 2(#58OR02)</div>
+                      <div class="select__item">Hive 3(#58OR03)</div>
+                      <!-- <div class="select__item">+ add the hive</div> -->
+                    </div>
+                  </div>
+                  <!-- Прогрес бари -->
+                  <div class="vidgets__bars">
+                    <!-- Прогрес бар -->
+                    <div class="vidgets__bar">
+                        <div class="vidgets__name">Weight of honey</div>
+                        <div class="vidgets__pointer">0%</div>
+                        <div class="vidgets__progressbar">
+                            <div data-procent="84" class="vidgets__progress"></div>
+                        </div>
+                    </div>
+                    <!-- Прогрес бар -->
+                    <div class="vidgets__bar">
+                      <div class="vidgets__name">Temperature in the hive</div>
+                      <div class="vidgets__pointer">0%</div>
+                      <div class="vidgets__progressbar">
+                        <div data-procent="80" class="vidgets__progress"></div>
+                      </div>
+                    </div>
+                    <!-- Прогрес бар -->
+                    <div class="vidgets__bar">
+                      <div class="vidgets__name">Humidity in the hive</div>
+                      <div class="vidgets__pointer">0%</div>
+                      <div class="vidgets__progressbar">
+                        <div data-procent="76" class="vidgets__progress"></div>
+                      </div>
+                    </div>
+                    <!-- Прогрес бар -->
+                    <div class="vidgets__bar">
+                      <div class="vidgets__name">Count bees</div>
+                      <div class="vidgets__pointer">0%</div>
+                      <div class="vidgets__progressbar">
+                        <div data-procent="79" class="vidgets__progress"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Задній фон -->
+                <div class="v-back"></div>
+              </div>
+            </div>
+        </section>
+        <!-- Секція статистики -->
+        <section class="statistics">
+            <div class="statistics__container container">
+                <div class="statistics__body -anim-items -anim-no-hide">
+                    <!-- Заголовок -->
+                    <div class="statistics__title title -anim-bottom">Statistics</div>
+                    <!-- Текст -->
+                    <div class="statistics__text -anim-sub-bottom">You have an ability to detaily learn the situation inside smart hive. There are some diagrams. They'll give you an information about 4 condition for last week.</div>
+                    <!-- Статистика -->
+                    <div class="statistics__tabs tabs -anim-left">
+                        <!-- Заголовки табів -->
+                        <nav class="tabs__items">
+                            <a href="#tab_1" class="tabs__item">Weight Statistics</a>
+                            <a href="#tab_2" class="tabs__item">Temperature Statistics</a>
+                            <a href="#tab_3" class="tabs__item">Humidity Statistics</a>
+                            <a href="#tab_4" class="tabs__item">Count Statistics</a>
+                        </nav>
+                        <!-- Таби -->
+                        <div class="tabs__body">
+                            <!-- Таб з діаграмою -->
+                            <div id="tab_1" class="tabs__content">
+                                <canvas ref="chart" id="chart-weight"></canvas>
+                            </div>
+                            <!-- Таб з діаграмою -->
+                            <div id="tab_2" class="tabs__content">
+                                <canvas ref="chart" id="chart-temperature"></canvas>
+                            </div>
+                            <!-- Таб з діаграмою -->
+                            <div id="tab_3" class="tabs__content">
+                                <canvas ref="chart" id="chart-humidity"></canvas>
+                            </div>
+                            <!-- Таб з діаграмою -->
+                            <div id="tab_4" class="tabs__content">
+                                <canvas ref="chart" id="chart-count"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statistics__decor"></div>
+            </div>
+        </section >
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body -anim-items -anim-no-hide">
+                    <!-- Логотип -->
+                    <div class="footer__logo -anim-left">
+                        <a href="#"><picture><source srcset="img/icons/footer__logo.svg" type="image/webp"><img src="img/icons/footer__logo.svg" alt="logo"></picture></a>
+                    </div>
+                    <!-- Текст -->
+                    <div class="footer__contacts -anim-items -anim-no-hide">
+                        <div class="footer__text -anim-left">
+                            <p>Developed by Panteleimon Varshavskiy</p>
+                            <p>2021-2022 | All rights reserved</p>
+                        </div>
+                        <!-- Контакти -->
+                        <div class="footer__links -anim-right">
+                            <div class="footer__caption">Contact us:</div>
+                            <div class="footer__icons">
+                                <a href="#"><picture><source srcset="img/icons/facebook.svg" type="image/webp"><img src="img/icons/facebook.svg" alt="facebook"></picture></a>
+                                <a href="mailto:beehive.guscoll@gmail.com"><img src="img/icons/mail.svg" alt="mail"></a>
+                                <a href="#"><picture><source srcset="img/icons/instagram.svg" type="image/webp"><img src="img/icons/instagram.svg" alt="instagram"></picture></a>
+                                <a href="#"><picture><source srcset="img/icons/linkedin.svg" type="image/webp"><img src="img/icons/linkedin.svg" alt="linkedin"></picture></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Кнопка угору -->
+        <a data-goto=".fullscreen" href="#" class="up-button"><div></div></a>
+    </div>
+
+    <!-- Підключаємо Swiper -->
+    <script src="js/swiper.min.js"></script>    
+    
+    <!-- Підключаємо Chart js -->
+    <script src="js/chart.min.js"></script>
+    
+    <!-- Підключаємо Java Script -->
+    <script src="js/script.min.js"></script>
+</body>
+</html>

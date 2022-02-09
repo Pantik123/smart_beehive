@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Заголовок та іконка сайту -->
+    <title>Login</title>
+    <link rel="shortcut icon" type="image/png" href="img/icons/bee.svg">
+    <!-- meta теги -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Підключаємо CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form -signin">
+            <div class="container">
+                <form action="#" class="form__body" method="post">
+                    <div class="form__logo"><a href="index.html"><img src="img/icons/newLogo_2.svg" alt="main_logo"></a></div>
+                    <div class="form__item">
+                        <input id="formEmail" type="email" value="" name="email" required placeholder = " " class="form__input">
+                        <label for="formEmail" class="form__label">E-mail</label>
+                    </div>
+                    <div class="form__item">
+                        <input id="formPassword" type="password" name="password" required placeholder = " " class="form__input">
+                        <label for="formPassword" class="form__label">Password</label>
+                    </div>
+                    <button type="submit" class="form__button btn">Sign in</button>
+                    <div class="form__message">
+                        Don't have an account?<span></span><a href="signup.html" class="form__link">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+            <div class="form__grass"></div>
+        </div>
+    </div>
+</body>
+</html>

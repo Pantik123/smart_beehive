@@ -2111,7 +2111,7 @@ button.swiper-pagination-bullet {
   z-index: 7;
 }
 
-.popup-3 .popup__img img {
+.popup-3 > .popup__img img {
   max-width: 40%;
 }
 
